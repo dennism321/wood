@@ -135,7 +135,7 @@ export function SiteHeader() {
           }`}
         >
           <div className="flex items-center justify-between border-b border-cream/10 px-5 py-4">
-            <Brand theme="dark" />
+            <Brand theme="dark" onNavigate={() => setOpen(false)} />
             <button
               type="button"
               onClick={() => setOpen(false)}
