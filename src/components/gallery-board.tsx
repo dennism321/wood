@@ -388,7 +388,7 @@ export function GalleryBoard({
                 index === 0 && filter === "All" && !likedOnly ? "col-span-2 lg:col-span-2" : ""
               }`}
             >
-              <div className={`relative w-full ${index === 0 && filter === "All" && !likedOnly ? "aspect-[16/10]" : aspectFor(index)}`}>
+              <div className={`relative h-full w-full ${index === 0 && filter === "All" && !likedOnly ? "aspect-[16/10]" : aspectFor(index)}`}>
                 <button
                   type="button"
                   onClick={() => openItem(item.slug)}

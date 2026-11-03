@@ -41,8 +41,9 @@ function fallbackItems(): GalleryItem[] {
 }
 
 async function seedIfEmpty() {
+  // Re-runs when the seed list grows, adding new posts without touching existing ones.
   const [{ total }] = await db.select({ total: count() }).from(galleryPosts);
-  if (Number(total) > 0) return;
+  if (Number(total) >= gallerySeed.length) return;
   await db
     .insert(galleryPosts)
     .values(

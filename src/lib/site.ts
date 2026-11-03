@@ -408,7 +408,153 @@ export const gallerySeed: GallerySeed[] = [
     baseLikes: 331,
     daysAgo: 54,
   },
+  // From the @soraghanwoodworking Instagram feed
+  {
+    slug: "palm-beach-sinker-cypress-kitchen",
+    title: "Palm Beach, 1925",
+    caption:
+      "Hand-joined doors and kitchen cabinets in reclaimed sinker cypress, recovered from river bottoms, for a landmarked Volk & Maass home. The restoration won the 2018 Polly Earl and Addison Mizner awards.",
+    alt: "Mediterranean-style kitchen with a carved cypress island, iron lanterns and a beamed, arched ceiling",
+    imageUrl: "/images/instagram/palm-beach-cypress-kitchen.jpg",
+    category: "Kitchens",
+    tags: ["kitchens", "reclaimed", "restoration"],
+    site: "Palm Beach, FL",
+    baseLikes: 402,
+    daysAgo: 58,
+  },
+  {
+    slug: "adirondack-church-altar",
+    title: "An Adirondack altar",
+    caption:
+      "A new church altar and carved reredos in the heart of the Adirondacks — gothic tracery, layered arches and a frame sized to the rose window above.",
+    alt: "Tall carved wooden church altarpiece with gothic arches beneath a round stained-glass window",
+    imageUrl: "/images/instagram/adirondack-church-altar.jpg",
+    category: "Millwork",
+    tags: ["millwork", "carving", "ecclesiastical"],
+    site: "Adirondacks, NY",
+    baseLikes: 365,
+    daysAgo: 62,
+  },
+  {
+    slug: "white-oak-bar-cabinet",
+    title: "Quarter-sawn oak bar cabinet",
+    caption:
+      "Sliding doors in quarter-sawn white oak with antique mirror inlays and black lattice accents, on a painted base with tapered legs.",
+    alt: "Bar cabinet with sliding antique-mirror doors framed in black lattice over white oak drawers",
+    imageUrl: "/images/instagram/oak-bar-cabinet.jpg",
+    category: "Furniture",
+    tags: ["furniture", "white-oak", "bars"],
+    site: "Connecticut",
+    baseLikes: 248,
+    daysAgo: 66,
+  },
+  {
+    slug: "marlo-laz-archway",
+    title: "Marlo Laz, West Village",
+    caption:
+      "The Rajasthani-inspired archway at the Marlo Laz jewelry flagship on Bleecker Street, conceived by the designer and built in our shop. Fortuny fabric hangs beneath it.",
+    alt: "Pink plaster jewelry boutique with a scalloped Rajasthani-style wooden archway hung with red drapes",
+    imageUrl: "/images/instagram/marlo-laz-archway.jpg",
+    category: "Millwork",
+    tags: ["millwork", "commercial", "arches"],
+    site: "New York, NY",
+    baseLikes: 296,
+    daysAgo: 70,
+  },
+  {
+    slug: "marlo-laz-store",
+    title: "The Marlo Laz flagship",
+    caption:
+      "Pink Venetian plaster, a 1970s Murano chandelier and marble vitrines, with our archway framing the back of the room.",
+    alt: "Pink jewelry store interior with a Murano glass chandelier, display vitrines and an arched alcove",
+    imageUrl: "/images/instagram/marlo-laz-store.jpg",
+    category: "Millwork",
+    tags: ["millwork", "commercial", "interiors"],
+    site: "New York, NY",
+    baseLikes: 211,
+    daysAgo: 71,
+  },
+  {
+    slug: "chestnut-farmhouse-kitchen",
+    title: "Retro farmhouse kitchen",
+    caption:
+      "Hand-painted cabinets and countertops cut from 200-year-old chestnut, with open shelves and a vintage drainboard sink.",
+    alt: "Farmhouse kitchen with yellow painted cabinets, chestnut countertops, open shelving and a vintage white sink",
+    imageUrl: "/images/instagram/chestnut-farmhouse-kitchen.jpg",
+    category: "Kitchens",
+    tags: ["kitchens", "reclaimed", "farmhouse"],
+    site: "Connecticut",
+    baseLikes: 187,
+    daysAgo: 76,
+  },
+  {
+    slug: "collinsville-mint-kitchen",
+    title: "Mint green in Collinsville",
+    caption:
+      "A 2019 remodel: mint green cabinetry that ties together the Bertazzoni range, farmhouse sink and quartz tops, under a planked wood hood.",
+    alt: "Kitchen with mint green cabinets, a wood-clad range hood, subway tile and a gas range",
+    imageUrl: "/images/instagram/collinsville-mint-kitchen.jpg",
+    category: "Kitchens",
+    tags: ["kitchens", "cabinetry", "remodel"],
+    site: "Collinsville, CT",
+    baseLikes: 233,
+    daysAgo: 82,
+  },
+  {
+    slug: "island-with-bookshelves",
+    title: "An island for cookbooks",
+    caption:
+      "A painted island with open shelving on the end for cookbooks, inside a kitchen of full-height inset cabinetry.",
+    alt: "White kitchen island with a dark countertop and open bookshelves on its end",
+    imageUrl: "/images/instagram/island-bookshelves.jpg",
+    category: "Kitchens",
+    tags: ["kitchens", "cabinetry", "shelving"],
+    site: "Connecticut",
+    baseLikes: 174,
+    daysAgo: 88,
+  },
+  {
+    slug: "walk-in-pantry",
+    title: "The organized pantry",
+    caption:
+      "Open shelves to the ceiling, butcher-block counters for small appliances and deep drawers below. Everything has a place.",
+    alt: "Walk-in pantry with white open shelving, butcher-block counters and baskets",
+    imageUrl: "/images/instagram/walk-in-pantry.jpg",
+    category: "Millwork",
+    tags: ["millwork", "pantry", "storage"],
+    site: "Connecticut",
+    baseLikes: 205,
+    daysAgo: 94,
+  },
+  {
+    slug: "closet-library-ladder",
+    title: "A dressing room with a ladder",
+    caption:
+      "Built-in shelving and drawers wall to wall, with a rolling library ladder to reach the top shelves.",
+    alt: "Bright walk-in closet with white built-in shelves, drawers and a rolling wooden library ladder",
+    imageUrl: "/images/instagram/closet-library-ladder.jpg",
+    category: "Millwork",
+    tags: ["millwork", "closets", "storage"],
+    site: "Connecticut",
+    baseLikes: 192,
+    daysAgo: 100,
+  },
 ];
+
+/** Shop video from the @soraghanwoodworking Instagram feed. */
+export const shopVideo = {
+  title: "A walnut table, slab to supper",
+  caption: "From our hands to their home — a table made for new beginnings.",
+  src: "/videos/walnut-table.mp4",
+  poster: "/videos/walnut-table-poster.jpg",
+  instagramUrl: "https://www.instagram.com/reel/DP81FUbgJFR/",
+  steps: [
+    "Rough black walnut slabs picked from the stack",
+    "Milled flat on the planer and jointer",
+    "Glued up, clamped and finished in the shop",
+    "Delivered and set in the family's dining room",
+  ],
+};
 
 export const galleryCategories = [
   "All",

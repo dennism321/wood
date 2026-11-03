@@ -4,7 +4,8 @@ import Link from "next/link";
 import { GalleryBoard } from "@/components/gallery-board";
 import { CtaBand, Eyebrow, JsonLd, PageHero, SectionHeading } from "@/components/ui";
 import { getGalleryItems } from "@/lib/gallery-server";
-import { gallerySeed, site } from "@/lib/site";
+import { gallerySeed, shopVideo, site } from "@/lib/site";
+import { withBase } from "@/lib/base-path";
 import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
 import { ArrowUpRight, Instagram } from "@/components/icons";
 
@@ -87,6 +88,50 @@ export default async function GalleryPage() {
           <p className="mt-6 text-center text-[0.7rem] uppercase tracking-[0.14em] text-ink/40">
             Photography from completed Soraghan Woodworking projects
           </p>
+        </div>
+      </section>
+
+      <section className="bg-espresso py-14 text-cream sm:py-20" aria-labelledby="shop-video-title">
+        <div className="shell grid items-center gap-10 md:grid-cols-[minmax(0,340px)_1fr] lg:gap-16">
+          <div className="mx-auto w-full max-w-[340px] overflow-hidden rounded-sm border border-cream/15 bg-ink shadow-2xl">
+            <video
+              className="block aspect-[9/16] h-auto w-full object-cover"
+              src={withBase(shopVideo.src)}
+              poster={withBase(shopVideo.poster)}
+              controls
+              playsInline
+              preload="none"
+              aria-label={shopVideo.title}
+            />
+          </div>
+          <div>
+            <Eyebrow tone="light">From the shop floor</Eyebrow>
+            <h2 id="shop-video-title" className="mt-3 font-display text-3xl leading-tight sm:text-4xl">
+              {shopVideo.title}
+            </h2>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-cream/70">
+              &ldquo;{shopVideo.caption}&rdquo; Forty-five seconds, start to finish — the same way
+              every piece leaves our Barkhamsted shop.
+            </p>
+            <ol className="mt-6 space-y-3">
+              {shopVideo.steps.map((step, index) => (
+                <li key={step} className="flex gap-4 text-sm text-cream/80">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-brass/50 font-display text-brass">
+                    {index + 1}
+                  </span>
+                  <span className="pt-1">{step}</span>
+                </li>
+              ))}
+            </ol>
+            <a
+              href={shopVideo.instagramUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mt-8 inline-flex items-center gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-brass-soft hover:text-brass"
+            >
+              <Instagram className="h-4 w-4" /> Watch on Instagram <ArrowUpRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       </section>
 
